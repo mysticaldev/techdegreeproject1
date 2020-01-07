@@ -1,0 +1,276 @@
+/* Global Layout Set-up */
+* { 
+  box-sizing: border-box;
+}
+  
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #222;
+  background: #ffaa80;
+}
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  color: #999;
+}
+a:hover {
+  color: #6633ff;
+}
+
+/* Section Styles */
+
+.main-menu {
+  width: 100%;
+  background: #5500ff;
+  min-height: 30px;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+}
+.menu {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.menu .name {
+    display: block;
+    margin-right: auto;
+    color: white;
+    font-size: 25px;
+}
+.menu li {
+  padding: 5px 10px 10px 10px;
+}
+.menu a {
+  transition: all .5s;
+}
+.menu a:hover {
+  color: white
+}
+
+header {
+  text-align: center;
+  background: url('images/beach.jpg') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+}
+header {
+  line-height: 1.5;
+}
+header .profile-image {
+  margin-top: 50px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 6px double #b3b3ff;
+  transition: all .5s;
+}
+header .profile-image:hover {
+  transform: scale(1.1) rotate(360deg);
+}
+.tag {
+  background-color: #ccccff;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  display: table;
+  margin: 10px auto;
+}
+.location {
+  background-color: #b3b3ff;
+  color: whitesmoke;
+}
+.info-card {
+  margin: 30px;
+  padding: 20px 40px 40px 40px;
+  max-width: 500px;
+  text-align: center;
+  background: #ffe6b3;
+  border-bottom: 25px solid #ffe6ff;
+  border-radius: 60px;
+  transition: all 1s;
+  font-family: 'Nunito', sans-serif;
+}
+.info-card:hover {
+  border-color: #ff99ff;
+  transform: scale(1.05);
+}
+.info-card h2{
+  color: #5500ff;
+}
+
+ul.skills {
+  padding: 0;
+  text-align: center;
+}
+
+.skills li {
+  border-radius: 6px;
+  display: inline-block;
+  background: #ffb366;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 20px;
+  
+}
+
+footer .copyright {
+  top: -8px;
+  font-size: .75em;
+  border-radius: 6px;
+  display: inline-block;
+  background: #e6e6ff;
+  color: #ff8c1a;
+  padding: 10px 20px;
+
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+a.social {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 60px;
+  height: 60px;
+  background-size: 60px 60px;
+  opacity: .4;
+  transition: all .5s;
+}
+a.twitter {
+  background-image: url(images/twitter.svg);
+}
+a.linkedin {
+  background-image: url(images/linkedin.svg);
+}
+a.github {
+  background-image: url(images/github.svg);
+}
+a.social:hover {
+  opacity: 1;
+}
+.clearfix {
+  clear: both;
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 720px) {
+  
+  .flex {
+      display: -ms-flexbox;      /* TWEENER - IE 10 */
+      display: flex; 
+      max-width: 1200px;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      margin: 0 auto;
+  }
+
+  header {
+    min-height: 470px;
+  }
+
+  .nav {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+
+
+  main {
+    padding-top: 20px;
+  }
+
+  main p {
+    line-height: 1.4;
+  }
+
+  footer {
+    font-size: 1.3em;
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+
+}
+.custom-box {
+  padding-top: 10px;
+  margin: auto;
+  max-width: 1080px;
+  text-align: center;
+  background: #ffebad;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all 0.5s;
+  color: #19004d;
+  font-family: 'Nunito', sans-serif;
+  
+}
+.custom-box:hover {
+  box-shadow: 0 20px 20px rgba(207, 184, 255, 0.6);
+  /* Learned this here https://superdevresources.com/css-button-glow-effect/ */
+  transform: scale(0.98)
+}
+ul.interests {
+  padding: 0;
+  text-align: center;
+}
+
+.interests li {
+  border-radius: 6px;
+  display: inline-block;
+  background: #5cd65c;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+}
+.background {
+  margin: auto;
+  padding: 20px 40px 40px 40px;
+  max-width: 800px;
+  text-align: center;
+  background: #ffe6b3;
+  border-bottom: 25px solid #ffe6ff;
+  border-radius: 60px;
+  transition: all 1s;
+  font-family: 'Nunito', sans-serif;
+}
+.background:hover {
+  border-color: #ff99ff;
+  transform: scale(1.05);
+}
+.background h2 {
+  color: #5500ff;
+}
+.flare {
+  border-radius: 20%;
+  height: 50%;
+  width: 50%;
+  transition: all 2s;
+}
+.adresses li{
+  list-style-type: none;
+  /* No bullets in list learned here https://fellowtuts.com/html-css/remove-bullets-from-unordered-list/ */
+
+}
